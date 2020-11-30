@@ -216,6 +216,10 @@ body {
     display: none;
   }
 
+  .top-section {
+    width: 100%;
+  }
+
   .container {
     padding: 5rem;
   }
