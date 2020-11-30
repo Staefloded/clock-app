@@ -30,7 +30,7 @@ function startTime() {
 
   if (hr > 11 && hr < 18) {
     clock.style.backgroundImage =
-      'linear-gradient(rgba(65, 70, 67, 0.308), rgba(65, 70, 67, 0.308)), url("/img/day.jpg")';
+      'linear-gradient(rgba(65, 70, 67, 0.308), rgba(65, 70, 67, 0.308)), url("https://res.cloudinary.com/staefloded/image/upload/v1606832292/day_sdb21n.jpg")';
     greeting.innerHTML = "<i class='fas fa-sun'></i> GOOD AFTERNOON, IT'S CURRENTLY";
     bottomToggle.style.background = `#dce4dcc7`;
     bottomToggle.style.color = `#333`;
@@ -46,7 +46,7 @@ function startTime() {
       x
     );
     clock.style.backgroundImage =
-      'linear-gradient(rgba(65, 70, 67, 0.308), rgba(65, 70, 67, 0.308)), url("/img/night.jpg")';
+      'linear-gradient(rgba(65, 70, 67, 0.308), rgba(65, 70, 67, 0.308)), url("https://res.cloudinary.com/staefloded/image/upload/v1606832299/night_ry2xnn.jpg")';
     bottomToggle.style.background = `#141414c7`;
     bottomToggle.style.color = `#fff`;
   } else {
@@ -56,7 +56,7 @@ function startTime() {
       x
     );
     clock.style.backgroundImage =
-      'linear-gradient(rgba(65, 70, 67, 0.308), rgba(65, 70, 67, 0.308)), url("/img/day.jpg")';
+      'linear-gradient(rgba(65, 70, 67, 0.308), rgba(65, 70, 67, 0.308)), url("https://res.cloudinary.com/staefloded/image/upload/v1606832292/day_sdb21n.jpg")';
     bottomToggle.style.background = `#dce4dcc7`;
     bottomToggle.style.color = `#333`;
   }
