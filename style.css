@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.clock {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  color: white;
+}
+
+.clock-container {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 115rem;
+  padding: 2rem 2rem;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.top-toggle {
+  height: 100%;
+}
+
+.top-toggle .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  color: rgba(255, 255, 255, 0.788);
+  height: 100%;
+}
+
+.top-section i {
+  font-size: 1.8rem;
+  padding-top: 1rem;
+  justify-self: flex-end;
+}
+
+.text {
+  animation: 2s ease-in-out;
+}
+
+.text p {
+  font-size: 1.6rem;
+  width: 97%;
+}
+
+.quote-toggle {
+  cursor: pointer;
+  height: 0;
+}
+
+.text h3 {
+  font-size: 1.8rem;
+  padding-top: 1rem;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.date-time p {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+
+.time {
+  display: flex;
+}
+
+.time h1 {
+  font-size: 14rem;
+  padding: 0;
+}
+
+.time p {
+  font-size: 3rem;
+  align-self: flex-end;
+  padding-bottom: 5rem;
+  font-weight: 300;
+}
+
+.location {
+  font-weight: 500 !important;
+}
+
+.bottom-section button {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: white;
+  color: gray;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.bottom--botton-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.bottom-section button span:first-child {
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+}
+
+.bottom-section button span:not(:first-child) {
+  display: inline-block;
+  background-color: rgb(49, 49, 54);
+  width: 3rem;
+  height: 3rem;
+  margin-left: 0.5rem;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-toggle {
+  height: 100%;
+}
+
+.bottom-toggle h1 {
+  font-size: 3.5rem;
+}
+
+.bottom-toggle .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
+
+.item:nth-child(3) {
+  border-left: 1px solid rgb(156, 152, 152);
+  height: 70%;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  margin: auto;
+}
+
+.bottom-toggle p {
+  font-size: 2rem;
+  font-weight: 100;
+}
+.item {
+  height: 100%;
+}
+
+/* Toggle Effect */
+.top-toggle .bottom-section {
+  padding-bottom: 3rem;
+}
+
+.toggle .bottom-section {
+  padding-bottom: 0;
+}
+
+.toggle .top-section {
+  height: 0;
+  overflow: hidden;
+}
+
+.clock-container .bottom-toggle {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+
+.toggle .bottom-toggle {
+  height: 100%;
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .item:nth-child(3) {
+    display: none;
+  }
+
+  .container {
+    padding: 5rem;
+  }
+
+  .bottom-toggle .container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+
+  .clock-container {
+    gap: 5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+
+  .top-section {
+    width: 100%;
+  }
+
+  .container {
+    padding: 3rem 2rem;
+  }
+
+  .bottom--botton-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+
+  .time h1 {
+    font-size: 11rem;
+    padding: 0;
+  }
+  .time p {
+    font-size: 2rem;
+    padding-bottom: 4rem;
+    padding-left: 1rem;
+  }
+
+  .bottom-section button {
+    font-size: 1.4rem;
+  }
+
+  .bottom-toggle .container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .bottom-toggle h1 {
+    font-size: 2.5rem;
+  }
+
+  .bottom-toggle p {
+    font-size: 1.8rem;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

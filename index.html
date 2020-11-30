@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Clock App</title>
+  </head>
+  <body>
+    <section class="clock">
+      <div class="clock-container">
+        <div class="top-toggle">
+          <div class="container">
+            <div class="top-section">
+              <div class="text">
+                <p>"Definiteness of purpose is the starting point of all achievement."</p>
+                <h3>W. Clement Stone</h3>
+              </div>
+              <i class="fas fa-sync-alt quote-toggle"></i>
+            </div>
+
+            <div class="bottom-section">
+              <div class="date-time">
+                <p class="greeting"></p>
+                <div class="time">
+                  <h1 class="time-txt"></h1>
+                  <p class="time-zone"></p>
+                </div>
+                <div class="bottom--botton-container">
+                  <p class="location">IN LAGOS, NIGERIA</p>
+                  <button class="dropdown">
+                    <span class="txt">MORE</span>
+                    <span class="icon"><i class="fas fa-angle-down"></i></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-toggle">
+          <div class="container">
+            <div class="item">
+              <p>CURRENT TIMEZONE</p>
+              <h1 class="country-continent"></h1>
+            </div>
+
+            <div class="item">
+              <p>DAY OF THE WEEK</p>
+              <h1 class="day-of-week"></h1>
+            </div>
+
+            <div class="item"></div>
+
+            <div class="item">
+              <p>DAY OF THE YEAR</p>
+              <h1 class="day-of-year"></h1>
+            </div>
+
+            <div class="item">
+              <p>WEEK NUMBER</p>
+              <h1 class="week-number"></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
