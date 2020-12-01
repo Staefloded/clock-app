@@ -217,19 +217,15 @@ body {
   }
 
   .top-section {
-    width: 100%;
+    width: 80%;
   }
 
   .container {
-    padding: 5rem;
+    padding: 2rem 5rem;
   }
 
   .bottom-toggle .container {
     grid-template-columns: repeat(2, 1fr);
-    gap: 5rem;
-  }
-
-  .clock-container {
     gap: 5rem;
   }
 }
